@@ -22,7 +22,7 @@ DWORD WINAPI autoclick(void* lpVoid)
         {
             mouse_event(MOUSEEVENTF_LEFTDOWN, 100, 100, 0, 0);
             mouse_event(MOUSEEVENTF_LEFTUP, 100, 100, 0, 0);
-            _sleep(50);
+            _sleep(5); //과부화로 인한 렉 방지를 위한 sleep
         }
     }
 }
